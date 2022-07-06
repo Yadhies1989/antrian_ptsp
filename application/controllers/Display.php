@@ -46,6 +46,7 @@ class Display extends CI_Controller
         $data['tanggal'] = $this->_tgl_indo(date('Y-m-d'));
         $data['data_loket'] = $this->proses->data_loket_aktif_cetak();
         $data['nama_pa'] = $this->proses->ambil_satker();
+        $data['title'] = "Antrian PTSP";
         // $this->load->view('v_header_display');
         $this->load->view('v_display-bjn', $data);
         // $this->load->view('v_display_cetak', $data);
@@ -81,7 +82,7 @@ class Display extends CI_Controller
         );
 
 
-        $tanggal = 'Hari ' . $dayList[$day] . ' ' . $pecahkan[2] . ' ' . $bulan[(int)$pecahkan[1]] . ' ' . $pecahkan[0];
+        $tanggal = $dayList[$day] . ', ' . $pecahkan[2] . ' ' . $bulan[(int)$pecahkan[1]] . ' ' . $pecahkan[0];
         return $tanggal;
     }
 
