@@ -112,7 +112,7 @@ class Display extends CI_Controller
         $url =  $protocol . $domainName;
         $data['url_antrian_sidang_depan'] = $url . $this->config->item('folder_antrian_sidang') . "/display_cetak";
         $this->proses->insert_antrian($no_loket, $nama_layanan, $no_antrian, $tanggal, $tgl_diambil, $berantai);
-        $this->load->view('v_cetak_antrian', $data);
+        $this->load->view('v_cetak_antriannew', $data);
     }
 
     public function cetak_antrian_test()
