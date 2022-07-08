@@ -27,7 +27,7 @@
 
         }
     </style>
-    <!-- <script>
+    <script>
         function RefreshParent() {
             if (window.opener != null && !window.opener.closed) {
                 window.opener.document.location.href = "<?php echo $url_antrian_sidang_depan; ?>";
@@ -42,7 +42,7 @@
                 window.close();
             }, 200);
         }
-    </script> -->
+    </script>
 </head>
 
 <body onload="cetak()">
