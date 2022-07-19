@@ -47,6 +47,10 @@ class Display extends CI_Controller
         $data['data_loket'] = $this->proses->data_loket_aktif_cetak();
         $data['nama_pa'] = $this->proses->ambil_satker();
         $data['title'] = "Antrian PTSP";
+        $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+        $domainName = $_SERVER['HTTP_HOST'] . '/';
+        $url =  $protocol . $domainName;
+        $data['url_antrian_sidang_depan'] = $url . $this->config->item('folder_antrian_sidang') . "/display_cetak";
         // $this->load->view('v_header_display');
         $this->load->view('v_display-bjn', $data);
         // $this->load->view('v_display_cetak', $data);

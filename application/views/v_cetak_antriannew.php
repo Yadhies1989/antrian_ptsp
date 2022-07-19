@@ -101,9 +101,9 @@
                 <h5><?php echo $tanggal; ?> </h5>
             </td>
         </tr>
-        <tr>
+        <!-- <tr>
             <td>
-                --------------------
+                <h5>-------------------------------------</h5>
             </td>
         </tr>
         <tr>
@@ -116,7 +116,7 @@
                 Anda Akan Dipanggil Sesuai <br>
                 Nomor Urut!
             </td>
-        </tr>
+        </tr> -->
     </table>
 
     <!-- Optional JavaScript; choose one of the two! -->
