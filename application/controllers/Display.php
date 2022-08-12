@@ -38,6 +38,20 @@ class Display extends CI_Controller
         $this->load->view('v_footer_display_tv');
     }
 
+    public function v4()
+    {
+        $this->load->model('m_proses', 'proses');
+        $data['title'] = 'Antrian PTSP PA BJN';
+        $data['satker'] = $this->proses->ambil_satker();
+        $data['tanggal'] = $this->_tgl_indo(date('Y-m-d'));
+        $data['data_loket'] = $this->proses->data_loket_aktif();
+        $data['nama_pa'] = $this->proses->ambil_satker();
+        $data['runningteks'] = $this->proses->ambil_runningteks();
+        // $this->load->view('v_header_display');
+        $this->load->view('v_display3', $data);
+        // $this->load->view('v_footer_display_tv');
+    }
+
 
     public function cetak()
     {

@@ -96,17 +96,17 @@
                 <div class="p-3 border bg-light">
                   <div class="card">
                     <div class="col text-center">
-                      <h5 class="card-header text-white" style="background-color:<?= $arraywarna[$row->urut_loket - 1]; ?>;">LOKET <?= $row->no_loket; ?></h5>
+                      <h5 class="card-header text-white" style="background-color:#2C6EB9;">LOKET <?= $row->no_loket; ?></h5>
                     </div>
                     <div class="card-body">
-                      <h5 class="card-title text-center" style="color: <?= $arraywarna[$row->urut_loket - 1]; ?>;"><?= $row->nama_layanan; ?></h5>
+                      <h5 class="card-title text-center" style="color: #2C6EB9;"><?= $row->nama_layanan; ?></h5>
                       <div class="card">
                         <div class="card-body">
-                          <h1 class="text-center" id="noantrian" style="color: <?= $arraywarna[$row->urut_loket - 1]; ?>;"><?= $huruf[$row->urut_loket - 1] . "-" . $row->no_antrian; ?></h1>
+                          <h1 class="text-center" id="noantrian" style="color: #2C6EB9;"><?= $huruf[$row->urut_loket - 1] . "-" . $row->no_antrian; ?></h1>
                         </div>
                       </div>
                       <div class="col text-center mt-2">
-                        <button class="btn cetak_antrian text-white" style="background-color:<?= $arraywarna[$row->urut_loket - 1]; ?>;" onclick="cetak_antrian(<?= $row->urut_loket ?> ,'<?= $row->nama_layanan ?>', <?= $row->berantai ?>)">CETAK ANTRIAN</button>
+                        <button class="btn cetak_antrian text-white" style="background-color:#2C6EB9;" onclick="cetak_antrian(<?= $row->urut_loket ?> ,'<?= $row->nama_layanan ?>', <?= $row->berantai ?>)">CETAK ANTRIAN</button>
                       </div>
 
                     </div>
