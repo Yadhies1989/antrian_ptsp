@@ -52,11 +52,10 @@
         <nav class="navbar" style="background-color: #047050;">
             <div class="container-fluid">
                 <div>
-                    <marquee behavior="" direction="">
-                        <h1 class="text-white" style="font-family: quicksand;">
-                            ANTRIAN PTSP <?= $satker; ?>
-                        </h1>
-                    </marquee>
+                    <h1 class="text-white" style="font-family: quicksand;">
+                        <?= $satker; ?>
+                    </h1>
+                    <div class="text-white" style="margin-top: -15px; font-size: 24px;font-family: quicksand;"><strong>Antrian Sidang <?php echo ($tanggal) ?></strong></div>
                 </div>
             </div>
             <!-- </nav> -->
@@ -83,8 +82,8 @@
                                 }
                             ?>
                                 <div class="col-12 col-lg-6 col-xl-4 col-md-4 mx-auto" style="margin-top:20px;">
-                                    <!-- <div class="widget widget-stats" style="background-color:<?= $arraywarna[$row->urut_loket - 1]; ?>;"> -->
-                                    <div class="widget widget-stats" style="background-color:#2C6EB9;">
+                                    <div class="widget widget-stats" style="background-color:<?= $arraywarna[$row->urut_loket - 1]; ?>;">
+                                        <!-- <div class="widget widget-stats" style="background-color:#2C6EB9;"> -->
                                         <div style="text-align: center">
                                             <a style="font-family:quicksand;font-size:50px;color:#ecf0f1;">
                                                 <b>

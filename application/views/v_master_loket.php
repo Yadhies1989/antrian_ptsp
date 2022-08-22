@@ -14,7 +14,7 @@
                             <th>Nama Layanan </th>
                             <th>Username</th>
                             <th>Jenis</th>
-                            <th>status</th>
+                            <th>Status</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
@@ -50,6 +50,7 @@
                             <th>Nomor Loket</th>
                             <th>Nama Layanan </th>
                             <th>Username</th>
+                            <th>Jenis</th>
                             <th>Status</th>
                             <th>Aksi</th>
                         </tr>
